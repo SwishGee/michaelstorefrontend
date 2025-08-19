@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — Michael’s Tech Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+  <nav>
+    <div class="container navbar">
+      <div class="brand"><div class="logo"></div> Michael’s Tech Hub</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container dashboard-main">
+    <h2>Admin Dashboard</h2>
+    <div class="dashboard-controls">
+      <button class="btn primary">Add Product</button>
+      <button class="btn danger">Delete Selected</button>
+    </div>
+    <table class="table">
+      <thead>
+        <tr><th>Product</th><th>Price</th><th>Stock</th><th>Actions</th></tr>
+      </thead>
+      <tbody id="productList"></tbody>
+    </table>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> Michael’s Tech Hub</footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="main.js"></script>
+</body>
+</html>

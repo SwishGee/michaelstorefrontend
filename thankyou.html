@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Mike's Tech Store</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jsPDF & AutoTable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.plugin.autotable.min.js"></script>
+
+  <script src="thankyou.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Order!</h1>
+  </header>
+
+  <main>
+    <section id="order-summary">
+      <h2>Order Summary</h2>
+      <p id="order-id"></p>
+      <p id="customer-info"></p>
+      <ul id="order-items"></ul>
+      <p id="order-total"></p>
+    </section>
+
+    <div class="actions">
+      <button id="download-receipt">Download Receipt (PDF)</button>
+      <button id="continue-shopping">Continue Shopping</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Mike's Tech Store</p>
+  </footer>
+</body>
+</html>
